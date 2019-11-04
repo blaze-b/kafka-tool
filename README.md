@@ -7,4 +7,5 @@ Kafka Server Running Scripts
 5) Run the kafka_starter.bat after giving the correct path details.
 6) Download the kafdrop from :-   https://bintray.com/obsidiandynamics/kafdrop/download_file?file_path=com%2Fobsidiandynamics%2Fkafdrop%2Fkafdrop%2F3.13.0%2Fkafdrop-3.13.0.jar
 7) Use http://localhost:9000 to view the Kafdrop. Go inside the topic you want and click on “View Messages”
+8) For reference please find the image file Structure_files.PNG
 
