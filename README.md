@@ -26,17 +26,16 @@ bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic
 Windows command line scripts
 ------------------------------------------------------------------------------------------------------
 
-bin\windows\zookeeper-server-start.bat config/zookeeper.properties
-bin\windows\kafka-server-start.bat config/server.properties
-bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test-kafka
-bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test
-bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
+1) bin\windows\zookeeper-server-start.bat config/zookeeper.properties
+2) bin\windows\kafka-server-start.bat config/server.properties
+3) bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test-kafka
+4) bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test
+5) bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
 Kafdrop jar running and use the jdk 11 for this
-D:\Applns\jdk-11.0.5_windows-x64_bin\bin\java -jar kafdrop-3.13.0.jar
+1) D:\Applns\jdk-11.0.5_windows-x64_bin\bin\java -jar kafdrop-3.13.0.jar
 After bring the jar up use the link below for navigation http://localhost:9000/
 
 Delete a topic
 ------------------------------------------------------------------------------------------------------
-bin\windows\kafka-topics.bat --zookeeper localhost:2181 --topic test --delete
-
-delete.topic.enable=true in the server.properties file
+1) bin\windows\kafka-topics.bat --zookeeper localhost:2181 --topic test --delete
+2) delete.topic.enable=true in the server.properties file
