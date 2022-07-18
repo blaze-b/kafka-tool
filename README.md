@@ -16,7 +16,7 @@
   2. Command to bring the kafka server up <br />
     `bin/windows/kafka-server-start.bat config/server.properties`
   3. Command to create a topic<br />
-    `bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test-kafka`
+    `bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`
   4. Command to send messages using the producer template<br />
     `bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test`
   5. Command to consume the messages send to the topic<br />
@@ -26,10 +26,10 @@
 
   1. `bin\windows\zookeeper-server-start.bat config/zookeeper.properties`
   2. `bin\windows\kafka-server-start.bat config/server.properties`
-  3. `bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test-kafka`
+  3. `bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`
   4. `bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test`
   5. `bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning`
-  6. Kafdrop jar running and use the jdk 11 for this, `D:\Applns\jdk-11.0.5_windows-x64_bin\bin\java -jar kafdrop-3.13.0.jar`
+  6. Kafdrop jar running and use the jdk 11 for this, `D:\Applns\openlogic-openjdk-11.0.8+10-windows-x64\openlogic-openjdk-11.0.8+10-win-x64\bin\java -jar kafdrop-3.30.0.jar`
   7. After bringing the kafdrop up use the link below for navigation http://localhost:9000/
 
 ## Delete a topic
