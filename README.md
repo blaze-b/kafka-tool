@@ -18,23 +18,23 @@
 
   1. Command to bring the zookeeper server up:
   
-    `bin/windows/zookeeper-server-start.bat config/zookeeper.properties`
+    bin/windows/zookeeper-server-start.bat config/zookeeper.properties
 	
   2. Command to bring the kafka server up:
   
-    `bin/windows/kafka-server-start.bat config/server.properties`
+    bin/windows/kafka-server-start.bat config/server.properties
 	
   3. Command to create a topic:
   
-    `bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`
+    bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
 	
   4. Command to send messages using the producer template:
   
-    `bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test`
+    bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test
 	
   5. Command to consume the messages send to the topic:
   
-    `bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning`
+    bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
 
 ## Windows
 
