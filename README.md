@@ -16,37 +16,37 @@
 
 ## Linux
 
-  1. Command to bring the zookeeper server up:
-  
-    bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+  1. Cmd to bring the zookeeper server up:
+    `bin/windows/zookeeper-server-start.bat config/zookeeper.properties`
 	
-  2. Command to bring the kafka server up:
-  
-    bin/windows/kafka-server-start.bat config/server.properties
+  2. Cmd to bring the kafka server up:
+    `bin/windows/kafka-server-start.bat config/server.properties`
 	
-  3. Command to create a topic:
-  
-    bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+  3. Cmd to create a topic:
+    `bin/windows/kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`
 	
-  4. Command to send messages using the producer template:
-  
-    bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test
+  4. Cmd to enable the producer template:
+    `bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic test`
 	
-  5. Command to consume the messages send to the topic:
-  
-    bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
+  5. Cmd to enable the consumer template:
+    `bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning`
 
 ## Windows
 
-  1. `bin\windows\zookeeper-server-start.bat config/zookeeper.properties`
+  1. Cmd to bring the zookeeper server up:
+    `bin\windows\zookeeper-server-start.bat config/zookeeper.properties`
   
-  2. `bin\windows\kafka-server-start.bat config/server.properties`
+  2. Cmd to bring the kafka server up:
+    `bin\windows\kafka-server-start.bat config/server.properties`
   
-  3. `bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`
+  3. Cmd to create a topic: 
+    `bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test`
   
-  4. `bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test`
+  4. Cmd to enable the producer template:
+    `bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test`
   
-  5. `bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning`
+  5. Cmd to enable the consumer template:
+    `bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning`
   
 
 ## Delete a topic
